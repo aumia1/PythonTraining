@@ -1,0 +1,48 @@
+--Today's class was based on learning about Composition as well as Encapsulation.
+We were introduced to inheritance. Inheritance means when one class gets the properties and behaviors from another class.
+We also learned about composition in which one class contains another class as a part of it. It usually means building a class of another classes.
+
+For example, the given code:
+class Engine:
+    def start(self):
+        print("Engine starting...")
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+
+The code above indicates that when we create a Car Class, we also automatically create an Engine for it as all cars have engines. This is composition
+
+def start(self):
+    self.engine.start()
+    print("Car is ready to go!")
+
+The rest of the code indicates to start the car and following this, the next given code creates a Car Object and the Car then prints its message.
+
+my_car = Car()
+my_car.start()
+
+--We also learned about using <b> as a wrapper to make a text appear bold and <i> to make italic.
+--We Also learned that python uses a.render() method.
+
+--Moving on to polymorphism, we learned that the same method call cn be used to print different output statements. For example,
+Dog(), prints(bark) would print bark and Cat(), prints(Meow) would print Meow.
+
+--Diving deep into polymorphism, python calculates based on the inputs we provide in any given method. For example, a return statement of a + b, would do addition and
+a (a-b) in the same statement would result in substraction.
+
+--Class variables belong to the class itself and are not defined inside __init__ whereas instance variables belong to each individual object and
+is defined inside __init__() using self.
+
+--Instance methods uses self and can access both class and instance variables while classmethods can only change class variables.
+
+--A decorator is a function that wraps another function inside it. FOr example the given code:
+
+def exp(fun)
+def wrapper()
+print(Before)
+fun()
+print(After)
+return wrapper
+
+This is a pseudocode example of a decorator where the print statements inside would get printed one after another when the main function is called.
