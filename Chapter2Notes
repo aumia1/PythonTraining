@@ -1,0 +1,20 @@
+--We learned about how to create an Object from a Class. For example, if we want to create a Person object like an actual human being from the person class, we would have to initialize it by creating
+an Object. For example, John = Person() would create an Object of the Person class. Now, since a person has to be defined by their own attributes like name, age, etc, we can do that by
+John.name = "John"
+John.age = 24.
+By doing this, we are instantiating the Object by adding the given information.
+
+-- We also learned about __init__ which is an easier way of creating objects from classes as it contains parameters that are passed from arguments easily
+when creating the object and it would automatically store the given information into an Object.
+
+-- __str__ controls how our object looks when printed as well as __repr__. For example str would print the name of an object within the parenthesis in our given method and print statement.
+Repr is more of a technical version of printing objects. For example d = Apple('Bob') would print as Apple Bob.
+
+-- We eventually learned about class and method overriding. For example:
+class Animal:
+def speak(self)
+print(animal sound)
+
+This code would print the animal sound but if we create an animal object, for e.g Dog(Animal) and print a different animal sound,
+this is known as method overriding and would print the sound of the chosen animal of the same class and calling the same method using different variable.
+
