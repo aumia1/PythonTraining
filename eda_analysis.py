@@ -11,7 +11,7 @@ print(df.head())
 
 #Show dataset rows and columns
 
-print("Shape:", df.shape)
+print("Shapee:", df.shape)
 
 # Show column names
 
